@@ -10,6 +10,25 @@
 
       <footer>
     
+ <!-- START STEP 2.21 ADD FOOTER MENUS -->
+ <nav>
+     <?php wp_nav_menu( array( 
+         'theme_location' => 'footer-menu', 
+         'container_class' => 'footer-nav' 
+         ) ); ?>
+ </nav>
+
+ <nav>
+     <?php wp_nav_menu( array( 
+         'theme_location' => 'social-menu', 
+         'container_class' => 'footer-social' 
+         ) ); ?>
+ </nav>
+
+
+ <p class="copyright">&copy; <?php echo bloginfo('name') ?>, <?php echo date("Y"); ?></p>
+ <!-- END STEP 2.21 ADD FOOTER MENUS -->
+
       </footer>
 
           <!-- START STEP 2.7 WP_FOOTER CONTENT -->
